@@ -123,7 +123,7 @@ class PageExtension extends DataExtension
         }
 
         if (strlen($this->getOwner()->Content)) {
-            $description = $this->getOwner()->Content;
+            $description = strip_tags(ShortcodeParser::get_active()->parse($this->getOwner()->Content));
         }
 
         return $description;
