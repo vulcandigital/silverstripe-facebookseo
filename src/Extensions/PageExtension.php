@@ -10,6 +10,7 @@ use SilverStripe\Forms\TextareaField;
 use SilverStripe\Forms\TextField;
 use SilverStripe\ORM\DataExtension;
 use SilverStripe\ORM\FieldType\DBHTMLText;
+use SilverStripe\View\Parsers\ShortcodeParser;
 use Vulcan\FacebookSeo\Builders\MetaGenerator;
 
 /**
