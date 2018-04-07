@@ -135,7 +135,7 @@ class PageExtension extends DataExtension
      */
     public function getFacebookImage()
     {
-        if (!$this->getOwner()->FacebookSeoImage()->exists() || !$this->FacebookSeoImage()->isPublished()) {
+        if (!$this->getOwner()->FacebookSeoImage()->exists() || !$this->getOwner()->FacebookSeoImage()->isPublished()) {
             return null;
         }
 
